@@ -20,8 +20,9 @@ public class StudentRepositoryImpl implements StudentRepository {
 
     @Override
     @Transactional
-    public void save(Student student) {
+    public Student save(Student student) {
         entityManager.persist(student);
+        return student;
     }
 
     @Override
@@ -44,9 +45,9 @@ public class StudentRepositoryImpl implements StudentRepository {
 
     @Override
     @Transactional
-    public int update(Student student) {
+    public Student update(Student student) {
         entityManager.merge(student);
-        return student.getId();
+        return student;
     }
 
     @Override
