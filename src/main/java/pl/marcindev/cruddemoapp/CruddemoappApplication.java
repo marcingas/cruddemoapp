@@ -24,8 +24,8 @@ public class CruddemoappApplication {
 //            for(var student : readAllStudents(studentRepository)){
 //                System.out.println(student);
 //            }
-           int id =1;
-//            System.out.println(updateStudent(studentRepository,id));
+           int id =5;
+            System.out.println(updateStudent(studentRepository,id));
 //            deleteStudent(studentRepository,id);
 //            System.out.println("Deleted num of Students=" + deleteAllStudents(studentRepository));
         };
